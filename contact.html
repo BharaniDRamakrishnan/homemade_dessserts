@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Homemade Desserts</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh; /* Full viewport height */
+            display: flex; /* Flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: flex-start; /* Align content at the top */
+            margin: 0; /* Remove default margins */
+            padding-top: 80px; /* Add padding to account for the navbar height */
+            background: url('contactimg.jpg') no-repeat center center/cover; /* Background image */
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 30px; /* Padding inside the box */
+            width: 50%;
+            max-width: 400px;
+            max-height: 500px; /* Maximum width of the form */
+        }
+
+        .btn-primary {
+            width: 100%; /* Full-width button */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="logo.webp" alt="Homely Bites Logo" class="logo-img">Homely Bites
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <div class="contact-box">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="contact-name">First Name</label>
+                <input type="text" class="form-control" id="contact-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" class="form-control" id="contact-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" placeholder="Write your message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+   
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
